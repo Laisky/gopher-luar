@@ -65,12 +65,12 @@ func structPtrIndex(L *lua.LState) int {
 }
 
 func structPtrNewIndex(L *lua.LState) int {
-	ref, mt := check(L, 1)
+	ref, _ := check(L, 1)
 	key := L.CheckString(2)
 	value := L.CheckAny(3)
 
 	ref = ref.Elem()
-	mt = MT(L, ref.Interface())
+	mt := MT(L, ref.Interface())
 
 	index := mt.fieldIndex(key)
 	if index == nil {

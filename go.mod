@@ -1,4 +1,4 @@
-module layeh.com/gopher-luar
+module github.com/Laisky/gopher-luar
 
 go 1.12
 

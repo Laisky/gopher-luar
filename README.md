@@ -1,4 +1,4 @@
-# gopher-luar [![GoDoc](https://godoc.org/layeh.com/gopher-luar?status.svg)](https://godoc.org/layeh.com/gopher-luar)
+# gopher-luar [![GoDoc](https://godoc.org/github.com/Laisky/gopher-luar?status.svg)](https://godoc.org/github.com/Laisky/gopher-luar)
 
 gopher-luar simplifies data passing to and from [gopher-lua](https://github.com/yuin/gopher-lua).
 
@@ -11,7 +11,7 @@ import (
     "fmt"
 
     "github.com/yuin/gopher-lua"
-    "layeh.com/gopher-luar"
+    "github.com/Laisky/gopher-luar"
 )
 
 type User struct {

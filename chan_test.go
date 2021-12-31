@@ -1,6 +1,7 @@
 package luar
 
 import (
+	"log"
 	"testing"
 
 	"github.com/yuin/gopher-lua"
@@ -15,7 +16,7 @@ func Test_chan(t *testing.T) {
 		ch <- "Tim"
 		name, ok := <-ch
 		if name != "John" || !ok {
-			t.Fatal("invalid value")
+			log.Panic("invalid value")
 		}
 
 		close(ch)
